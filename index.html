@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PWA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <h1>PWA</h1>
+    <img src="pwa-logo.png">
+
+    <script>
+    if (navigator.serviceWorker) {
+        navigator.serviceWorker.register('service-worker.js').then(function() {
+            console.log("ServiceWorker登録成功");
+        }).catch(function(err) {
+            console.log("ServiceWorker登録失敗: ", err);
+        });
+    }
+    </script>
+</body>
+</html>

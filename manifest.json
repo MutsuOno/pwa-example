@@ -1,0 +1,6 @@
+{
+    "short_name": "PWA Demo",
+    "name": "PWAのデモ",
+    "start_url": "https://mutsuono.github.io/pwa-example/",
+    "display": "standalone"
+}
